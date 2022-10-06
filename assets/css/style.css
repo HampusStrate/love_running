@@ -1,1 +1,38 @@
-body {font-family: Arial, Helvetica, sans-serif;}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&display=swap');
+
+body {
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+}
+
+.title {
+
+}
+
+#hero-outer {
+    height:600px;
+    width:100%;
+    overflow:hidden;
+}
+
+#hero-image {
+    height:600px;
+    width:100%;
+    background: url("../images/hero-image.webp") no-repeat center center;
+
+    /*animates zoom effect on loading page*/
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+/*creates the zoom effect of the hero image*/
+
+@keyframes hero-zoom {
+    from{
+        transform:scale(1);
+    }
+    to {
+        transform: scale(1,1);
+    }
+}
